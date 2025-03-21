@@ -1,0 +1,27 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 55px;
+}
+body{
+  background-color: var(--black);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--light-grey);
+}
+
+ a, button, input, textarea, svg{
+   text-decoration: var(--transition-duration);
+ }
+
+ a{
+   text-decoration: none;
+   color: var(--white);
+ }
