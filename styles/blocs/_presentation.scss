@@ -1,0 +1,35 @@
+.presentation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 80px;
+
+  .presentation__image{
+    position: relative;
+    transform: translateX(44px);
+    .presentation__img{
+      max-width: 750px;
+    }
+
+  }
+  .presentation__text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: translateX(-44px);
+    max-width: 738px;
+
+      .presentation__title{
+        font-size: 78px;
+
+        .presentation__highlight{
+          color: rgba(255, 255, 255, 0.5)
+        }
+      }
+
+    .presentation__description{
+      font-size: 18px;
+    }
+  }
+
+}

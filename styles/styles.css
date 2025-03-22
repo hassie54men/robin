@@ -255,6 +255,12 @@ a {
   padding-inline: var(--container-padding-x);
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
 :root {
   --black: #000;
   --level-1: #181823;
@@ -269,8 +275,8 @@ a {
   --violet-accent: #fbe4ff;
   --font-family: "Sen", sans-serif;
   --second-family: "Bahnschrift", sans-serif;
-  --container-width: 1296px;
-  --container-padding-x: 10px;
+  --container-width: 1380px;
+  --container-padding-x: 40px;
   --transition-duration: 0.4s;
   --header-height: 88px;
 }
@@ -279,18 +285,94 @@ a {
   position: sticky;
   top: 0;
   background-color: var(--black);
+  z-index: 1;
 }
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 30px;
+  min-height: 90px;
 }
 .header__nav-list {
   display: flex;
   justify-content: space-between;
   gap: 48px;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 80px;
+}
+.presentation .presentation__image {
+  position: relative;
+  transform: translateX(44px);
+}
+.presentation .presentation__image .presentation__img {
+  max-width: 750px;
+}
+.presentation .presentation__text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transform: translateX(-44px);
+  max-width: 738px;
+}
+.presentation .presentation__text .presentation__title {
+  font-size: 78px;
+}
+.presentation .presentation__text .presentation__title .presentation__highlight {
+  color: rgba(255, 255, 255, 0.5);
+}
+.presentation .presentation__text .presentation__description {
+  font-size: 18px;
+}
+
+.experience {
+  padding-block: 120px;
+}
+.experience .experience__subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--light-grey);
+  margin-bottom: 8px;
+}
+.experience .experience__description {
+  font-weight: 700;
+  font-size: 55px;
+  color: var(--white);
+  margin-bottom: 40px;
+  max-width: 689px;
+}
+.experience .experience__companies .experience__company {
+  grid-column: span 4;
+}
+.experience .experience__companies .experience__company .experience__number {
+  font-weight: 400;
+  font-size: 117px;
+  color: var(--light-grey);
+  display: inline-block;
+}
+.experience .experience__companies .experience__company .experience__name {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+.experience .experience__companies .experience__company .experience__name .google {
+  color: var(--green-accent);
+}
+.experience .experience__companies .experience__company .experience__name .facebook {
+  color: var(--blue-accent);
+}
+.experience .experience__companies .experience__company .experience__name .dribbble {
+  color: var(--pink-accent);
+}
+.experience .experience__companies .experience__company .experience__description {
+  color: var(--light-grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 /*# sourceMappingURL=styles.css.map */

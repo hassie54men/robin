@@ -1,0 +1,53 @@
+.experience{
+  padding-block: 120px;
+
+  .experience__subtitle{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--light-grey);
+    margin-bottom: 8px;
+  }
+  .experience__description{
+    font-weight: 700;
+    font-size: 55px;
+    color: var(--white);
+    margin-bottom: 40px;
+    max-width: 689px;
+  }
+  .experience__companies{
+    .experience__company{
+      grid-column: span 4;
+
+      .experience__number{
+        font-weight: 400;
+        font-size: 117px;
+        color: var(--light-grey);
+        display: inline-block;
+      }
+      .experience__name{
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 22px;
+
+        .google{
+          color: var(--green-accent);
+        }
+        .facebook{
+          color: var(--blue-accent);
+        }
+        .dribbble{
+          color: var(--pink-accent);
+        }
+
+      }
+      .experience__description{
+        color: var(--light-grey);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+      }
+
+    }
+  }
+
+}
