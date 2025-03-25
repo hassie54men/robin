@@ -1,0 +1,38 @@
+.skillsets{
+  padding-block: 120px;
+
+  .skillsets__content{
+    grid-column: span 4;
+
+    .skillsets__title{
+      margin-bottom: 24px;
+    }
+    .skillsets__description{
+      font-size: 18px;
+    }
+
+  }
+
+  .skillsets__skills{
+    grid-column: span 8;
+    column-gap: 24px;
+    row-gap: 48px;
+
+    .skillsets__block{
+      grid-column: span 6;
+
+      .skillsets__icon{
+        margin-bottom: 24px;
+      }
+      .skillsets__subtitle{
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+      .skillsets__skill-description{
+
+      }
+
+
+    }
+  }
+}

@@ -229,6 +229,7 @@ h6 {
   font-weight: 700;
   color: var(--white);
   font-size: 55px;
+  line-height: normal;
 }
 
 body {
@@ -258,7 +259,7 @@ a {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 24px;
+  column-gap: 24px;
 }
 
 :root {
@@ -358,6 +359,7 @@ a {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 22px;
+  color: var(--white);
 }
 .experience .experience__companies .experience__company .experience__name .google {
   color: var(--green-accent);
@@ -373,6 +375,247 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+}
+
+.values {
+  background-color: var(--peach-accent);
+}
+.values .values__content {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 6;
+  padding-block: 120px;
+}
+.values .values__content .values__subtitle {
+  font-size: 55px;
+  color: var(--level-1);
+  margin-bottom: 24px;
+}
+.values .values__content .values__description {
+  font-size: 18px;
+  color: var(--dark-grey);
+  margin-bottom: 134px;
+}
+.values .values__content .values__link {
+  color: var(--level-1);
+}
+.values .values__content .button {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4px;
+  text-decoration: none;
+  width: fit-content;
+}
+.values .values__content .button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-grey);
+}
+.values .values__media {
+  grid-column: span 6;
+}
+.values .values__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.values-instagram {
+  background-color: var(--violet-accent);
+}
+
+.skillsets {
+  padding-block: 120px;
+}
+.skillsets .skillsets__content {
+  grid-column: span 4;
+}
+.skillsets .skillsets__content .skillsets__title {
+  margin-bottom: 24px;
+}
+.skillsets .skillsets__content .skillsets__description {
+  font-size: 18px;
+}
+.skillsets .skillsets__skills {
+  grid-column: span 8;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.skillsets .skillsets__skills .skillsets__block {
+  grid-column: span 6;
+}
+.skillsets .skillsets__skills .skillsets__block .skillsets__icon {
+  margin-bottom: 24px;
+}
+.skillsets .skillsets__skills .skillsets__block .skillsets__subtitle {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.swiper {
+  margin-bottom: 120px;
+}
+.swiper .swiper__container .swiper__wrapper {
+  gap: 0;
+}
+.swiper .swiper__container .swiper__wrapper .swiper__slide {
+  border: 1px solid var(--level-1);
+  width: auto;
+  height: 140px;
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects {
+  margin-bottom: 153px;
+}
+.projects .projects__list .projects__item {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.projects .projects__list .projects__item .projects__header .projects__title {
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--light-grey);
+  margin-bottom: 8px;
+}
+.projects .projects__list .projects__item .projects__header .projects__subtitle {
+  font-size: 55px;
+  line-height: normal;
+}
+.projects .projects__list .projects__item .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 636px;
+}
+.projects .projects__list .projects__item .project-card .project-card__content {
+  padding: 40px 32px;
+  background-color: var(--level-1);
+}
+.projects .projects__list .projects__item .project-card .project-card__content .project-card__title {
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+.projects .projects__list .projects__item .projects__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 91px;
+}
+.projects .projects__list .projects__item .projects__footer .projects__button {
+  border: 1px solid var(--purple);
+  padding: 24px 32px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.dribble {
+  margin-block: 120px;
+}
+.dribble .dribble__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+.dribble .dribble__content .dribble__title {
+  margin-bottom: 24px;
+}
+.dribble .dribble__content .dribble__description {
+  font-size: 18px;
+  max-width: 636px;
+  margin-bottom: 40px;
+}
+.dribble .dribble__content .dribble__link {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4px;
+  text-decoration: none;
+  width: fit-content;
+}
+.dribble .dribble__content .dribble__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-grey);
+}
+.dribble .dribble__media .dribble__image {
+  height: 100%;
+}
+
+.reviews {
+  padding-block: 120px;
+}
+.reviews .reviews__content {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+.reviews .reviews__content .reviews__title {
+  margin-bottom: 24px;
+  max-width: 588px;
+}
+.reviews .reviews__content .reviews__description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 588px;
+}
+.reviews .reviews__content .reviews__link {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4px;
+  text-decoration: none;
+  width: fit-content;
+}
+.reviews .reviews__content .reviews__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-grey);
+}
+.reviews .reviews__block {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
+}
+.reviews .reviews__block .reviews__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.reviews .reviews__block .reviews__card .reviews__text {
+  padding: 64px;
+  max-width: 636px;
+  border: 1px solid var(--dark-grey);
+}
+.reviews .reviews__block .reviews__card .reviews__text .reviews__review {
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white);
+}
+.reviews .reviews__block .reviews__card .reviews__text .reviews__name {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=styles.css.map */

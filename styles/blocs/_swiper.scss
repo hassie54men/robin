@@ -1,0 +1,24 @@
+.swiper{
+  margin-bottom: 120px;
+
+  .swiper__container{
+
+    .swiper__wrapper{
+      gap: 0;
+
+      .swiper__slide{
+        border: 1px solid var(--level-1);
+        width: auto;
+        height: 140px;
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .swiper__image{
+
+        }
+      }
+    }
+  }
+}
