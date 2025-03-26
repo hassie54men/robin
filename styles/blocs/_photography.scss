@@ -1,0 +1,44 @@
+.photography{
+  padding-block: 120px;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    max-width: 588px;
+    margin-bottom: 64px;
+
+    &__description{
+      font-size: 18px;
+    }
+  }
+
+  &__media{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    .photography__country-list{
+      display: flex;
+      column-gap: 24px;
+
+      .photography__button{
+        background-color: transparent;
+        text-transform: uppercase;
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 700;
+        border: 1px solid var(--purple);
+        padding: 12px 16px;
+      }
+
+    }
+
+    .photography__gallery{
+
+      .photography__gallery-item{
+        grid-column: span 3;
+      }
+    }
+  }
+}

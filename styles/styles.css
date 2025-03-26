@@ -617,5 +617,117 @@ a {
   font-weight: 700;
   font-size: 18px;
 }
+.photography {
+  padding-block: 120px;
+}
+.photography__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  max-width: 588px;
+  margin-bottom: 64px;
+}
+.photography__content__description {
+  font-size: 18px;
+}
+.photography__media {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.photography__media .photography__country-list {
+  display: flex;
+  column-gap: 24px;
+}
+.photography__media .photography__country-list .photography__button {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid var(--purple);
+  padding: 12px 16px;
+}
+.photography__media .photography__gallery .photography__gallery-item {
+  grid-column: span 3;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-block: 120px;
+}
+.contact__text {
+  max-width: 526px;
+}
+.contact__text .contact__title {
+  margin-bottom: 24px;
+}
+.contact__text .contact__description {
+  font-size: 18px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form label {
+  margin-bottom: 8px;
+}
+.contact__form input {
+  width: 526px;
+  height: 50px;
+  background-color: var(--level-1);
+  margin-bottom: 40px;
+  border: none;
+}
+.contact__form textarea {
+  width: 526px;
+  height: 100px;
+  background-color: var(--level-1);
+  margin-bottom: 40px;
+  border: none;
+}
+.contact__form .contact__button {
+  padding: 24px 32px;
+  width: 526px;
+  height: 75px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: var(--purple);
+  color: var(--white);
+}
+
+.footer {
+  padding-top: 80px;
+  background-color: var(--level-1);
+}
+.footer .footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 46px;
+  padding-right: 250px;
+}
+.footer .footer__content .footer__media {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  align-items: center;
+}
+.footer .footer__content .footer__media .socials__list {
+  display: flex;
+  column-gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__content .footer__menu {
+  display: flex;
+  gap: 150px;
+}
+.footer .footer__content .footer__menu .footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  gap: 24px;
+}
 
 /*# sourceMappingURL=styles.css.map */
