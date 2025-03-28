@@ -9,6 +9,10 @@
     transform: translateX(44px);
     .presentation__img{
       max-width: 750px;
+
+      @include tablet {
+        max-width: 385px;
+      }
     }
 
   }
@@ -21,6 +25,11 @@
 
       .presentation__title{
         font-size: 78px;
+        margin-bottom: 32px;
+
+        @include tablet {
+          font-size: 56px;
+        }
 
         .presentation__highlight{
           color: rgba(255, 255, 255, 0.5)

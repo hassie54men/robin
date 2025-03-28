@@ -1,8 +1,17 @@
 .skillsets{
   padding-block: 120px;
 
+  @include tablet {
+    padding-block: 80px;
+  }
+
   .skillsets__content{
     grid-column: span 4;
+
+    @include tablet {
+      grid-column: span 12;
+      margin-bottom: 48px;
+    }
 
     .skillsets__title{
       margin-bottom: 24px;
@@ -17,6 +26,10 @@
     grid-column: span 8;
     column-gap: 24px;
     row-gap: 48px;
+
+    @include tablet {
+      grid-column: span 12;
+    }
 
     .skillsets__block{
       grid-column: span 6;

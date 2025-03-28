@@ -1,6 +1,10 @@
 .dribble{
   margin-block: 120px;
 
+  @include tablet {
+    margin-block: 80px;
+  }
+
   .dribble__content{
     display: flex;
     flex-direction: column;

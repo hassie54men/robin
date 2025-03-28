@@ -1,6 +1,10 @@
 .experience{
   padding-block: 120px;
 
+  @include tablet {
+    padding-block: 80px;
+  }
+
   .experience__subtitle{
     font-size: 16px;
     text-transform: uppercase;

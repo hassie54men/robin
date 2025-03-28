@@ -1,6 +1,10 @@
 .swiper{
   margin-bottom: 120px;
 
+  @include tablet{
+    margin-bottom: 80px;
+  }
+
   .swiper__container{
 
     .swiper__wrapper{
@@ -14,6 +18,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include tablet {
+          grid-column: span 6;
+        }
 
         .swiper__image{
 

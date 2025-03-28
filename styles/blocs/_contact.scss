@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   padding-block: 120px;
+  gap: 24px;
+
+  @include tablet{
+    padding-block: 80px;
+  }
 
   &__text{
     max-width: 526px;
@@ -24,18 +29,20 @@
     }
 
     input{
-      width: 526px;
+      max-width: 526px;
       height: 50px;
       background-color: var(--level-1);
       margin-bottom: 40px;
       border: none;
+
     }
     textarea{
-      width: 526px;
+      max-width: 526px;
       height: 100px;
       background-color: var(--level-1);
       margin-bottom: 40px;
       border: none;
+
     }
 
     .contact__button{
@@ -46,6 +53,8 @@
       text-transform: uppercase;
       background: var(--purple);
       color: var(--white);
+
+
 
     }
   }

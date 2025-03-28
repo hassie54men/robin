@@ -299,6 +299,9 @@ a {
   justify-content: space-between;
   gap: 48px;
 }
+.header__burger {
+  display: none;
+}
 
 .presentation {
   display: flex;
@@ -313,6 +316,11 @@ a {
 .presentation .presentation__image .presentation__img {
   max-width: 750px;
 }
+@media (max-width: 1023px) {
+  .presentation .presentation__image .presentation__img {
+    max-width: 385px;
+  }
+}
 .presentation .presentation__text {
   display: flex;
   flex-direction: column;
@@ -322,6 +330,12 @@ a {
 }
 .presentation .presentation__text .presentation__title {
   font-size: 78px;
+  margin-bottom: 32px;
+}
+@media (max-width: 1023px) {
+  .presentation .presentation__text .presentation__title {
+    font-size: 56px;
+  }
 }
 .presentation .presentation__text .presentation__title .presentation__highlight {
   color: rgba(255, 255, 255, 0.5);
@@ -332,6 +346,11 @@ a {
 
 .experience {
   padding-block: 120px;
+}
+@media (max-width: 1023px) {
+  .experience {
+    padding-block: 80px;
+  }
 }
 .experience .experience__subtitle {
   font-size: 16px;
@@ -386,6 +405,11 @@ a {
   grid-column: span 6;
   padding-block: 120px;
 }
+@media (max-width: 1023px) {
+  .values .values__content {
+    padding-block: 80px;
+  }
+}
 .values .values__content .values__subtitle {
   font-size: 55px;
   color: var(--level-1);
@@ -431,8 +455,19 @@ a {
 .skillsets {
   padding-block: 120px;
 }
+@media (max-width: 1023px) {
+  .skillsets {
+    padding-block: 80px;
+  }
+}
 .skillsets .skillsets__content {
   grid-column: span 4;
+}
+@media (max-width: 1023px) {
+  .skillsets .skillsets__content {
+    grid-column: span 12;
+    margin-bottom: 48px;
+  }
 }
 .skillsets .skillsets__content .skillsets__title {
   margin-bottom: 24px;
@@ -444,6 +479,11 @@ a {
   grid-column: span 8;
   column-gap: 24px;
   row-gap: 48px;
+}
+@media (max-width: 1023px) {
+  .skillsets .skillsets__skills {
+    grid-column: span 12;
+  }
 }
 .skillsets .skillsets__skills .skillsets__block {
   grid-column: span 6;
@@ -458,6 +498,11 @@ a {
 .swiper {
   margin-bottom: 120px;
 }
+@media (max-width: 1023px) {
+  .swiper {
+    margin-bottom: 80px;
+  }
+}
 .swiper .swiper__container .swiper__wrapper {
   gap: 0;
 }
@@ -470,14 +515,36 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1023px) {
+  .swiper .swiper__container .swiper__wrapper .swiper__slide {
+    grid-column: span 6;
+  }
+}
 .projects {
   margin-bottom: 153px;
+}
+@media (max-width: 1023px) {
+  .projects {
+    margin-bottom: 80px;
+  }
 }
 .projects .projects__list .projects__item {
   grid-column: span 6;
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  .projects .projects__list .projects__item {
+    grid-column: span 12;
+  }
+}
+.projects .projects__list .projects__item .projects__header {
+  max-width: 688px;
+  display: flex;
+  flex-direction: column;
 }
 .projects .projects__list .projects__item .projects__header .projects__title {
   font-size: 16px;
@@ -496,6 +563,12 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 636px;
+}
+.projects .projects__list .projects__item .project-card .project-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .projects .projects__list .projects__item .project-card .project-card__content {
   padding: 40px 32px;
@@ -522,6 +595,11 @@ a {
 
 .dribble {
   margin-block: 120px;
+}
+@media (max-width: 1023px) {
+  .dribble {
+    margin-block: 80px;
+  }
 }
 .dribble .dribble__content {
   display: flex;
@@ -559,6 +637,11 @@ a {
 .reviews {
   padding-block: 120px;
 }
+@media (max-width: 1023px) {
+  .reviews {
+    padding-block: 80px;
+  }
+}
 .reviews .reviews__content {
   grid-column: span 6;
   display: flex;
@@ -594,7 +677,12 @@ a {
   grid-column: span 6;
   display: flex;
   flex-direction: column;
-  row-gap: 120px;
+  gap: 120px;
+}
+@media (max-width: 1023px) {
+  .reviews .reviews__block {
+    gap: 64px;
+  }
 }
 .reviews .reviews__block .reviews__card {
   display: flex;
@@ -620,6 +708,11 @@ a {
 .photography {
   padding-block: 120px;
 }
+@media (max-width: 1023px) {
+  .photography {
+    padding-block: 80px;
+  }
+}
 .photography__content {
   display: flex;
   flex-direction: column;
@@ -638,6 +731,7 @@ a {
 .photography__media .photography__country-list {
   display: flex;
   column-gap: 24px;
+  row-gap: 24px;
 }
 .photography__media .photography__country-list .photography__button {
   background-color: transparent;
@@ -648,14 +742,33 @@ a {
   border: 1px solid var(--purple);
   padding: 12px 16px;
 }
+.photography__media .photography__gallery {
+  gap: 24px;
+}
 .photography__media .photography__gallery .photography__gallery-item {
   grid-column: span 3;
+}
+.photography__media .photography__gallery .photography__gallery-item .photography__gallery-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1023px) {
+  .photography__media .photography__gallery .photography__gallery-item {
+    grid-column: span 6;
+  }
 }
 
 .contact {
   display: flex;
   justify-content: center;
   padding-block: 120px;
+  gap: 24px;
+}
+@media (max-width: 1023px) {
+  .contact {
+    padding-block: 80px;
+  }
 }
 .contact__text {
   max-width: 526px;
@@ -674,14 +787,14 @@ a {
   margin-bottom: 8px;
 }
 .contact__form input {
-  width: 526px;
+  max-width: 526px;
   height: 50px;
   background-color: var(--level-1);
   margin-bottom: 40px;
   border: none;
 }
 .contact__form textarea {
-  width: 526px;
+  max-width: 526px;
   height: 100px;
   background-color: var(--level-1);
   margin-bottom: 40px;
@@ -705,7 +818,6 @@ a {
   display: flex;
   justify-content: space-between;
   padding-bottom: 46px;
-  padding-right: 250px;
 }
 .footer .footer__content .footer__media {
   display: flex;

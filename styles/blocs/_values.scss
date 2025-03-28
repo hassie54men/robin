@@ -11,6 +11,10 @@
     grid-column: span 6;
     padding-block: 120px;
 
+    @include tablet {
+      padding-block: 80px;
+    }
+
     .values__subtitle{
       font-size: 55px;
       color: var(--level-1);
