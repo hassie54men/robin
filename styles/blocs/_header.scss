@@ -2,13 +2,19 @@
   position: sticky;
   top: 0;
   background-color: var(--black);
-  z-index: 1;
+  z-index: 2;
 
   &__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 90px;
+  }
+
+  .header__nav{
+    @include mobile {
+      display: none;
+    }
   }
   &__nav-list{
     display: flex;
@@ -18,5 +24,21 @@
 
   &__burger{
     display: none;
+
+    .header__burger-button{
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+      border: none;
+
+      .header__burger-icon{
+
+      }
+
+    }
+
+    @include mobile {
+      display: flex;
+    }
   }
 }

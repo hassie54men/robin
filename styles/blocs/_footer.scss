@@ -2,10 +2,18 @@
   padding-top: 80px;
   background-color: var(--level-1);
 
+  @include mobile{
+    padding-top: 48px ;
+  }
+
   .footer__content{
     display: flex;
     justify-content: space-between;
     padding-bottom: 46px;
+
+    @include mobile{
+      flex-direction: column;
+    }
 
     .footer__media{
       display: flex;
@@ -13,11 +21,20 @@
       row-gap: 32px;
       align-items: center;
 
+      @include mobile{
+        align-items: flex-start;
+        margin-bottom: 48px;
+      }
+
       .socials__list{
         display: flex;
         column-gap: 16px;
         justify-content: center;
         align-items: center;
+
+        @include mobile{
+          column-gap: 0;
+        }
       }
 
     }
@@ -25,11 +42,20 @@
       display: flex;
       gap: 150px;
 
+      @include mobile {
+        flex-direction: column;
+        gap: 20px;
+      }
+
       .footer__menu-list{
         display: flex;
         flex-direction: column;
         row-gap: 40px;
         gap: 24px;
+
+        @include mobile {
+          gap: 20px;
+        }
       }
 
     }

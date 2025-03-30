@@ -10,15 +10,26 @@
     flex-direction: column;
     grid-column: span 6;
     padding-block: 120px;
+    padding-inline: 40px;
 
     @include tablet {
       padding-block: 80px;
+    }
+
+    @include mobile{
+      grid-column: span 12;
+      padding-block: 48px;
+      padding-inline: 20px;
     }
 
     .values__subtitle{
       font-size: 55px;
       color: var(--level-1);
       margin-bottom: 24px;
+
+      @include mobile{
+        font-size: 32px;
+      }
     }
 
     .values__description{
@@ -52,6 +63,11 @@
 
   .values__media{
     grid-column: span 6;
+    max-width: 100%;
+
+    @include mobile{
+      grid-column: span 12;
+    }
   }
 
   .values__img{

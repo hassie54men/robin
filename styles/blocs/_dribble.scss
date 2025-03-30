@@ -5,10 +5,18 @@
     margin-block: 80px;
   }
 
+  @include mobile{
+    margin-block: 64px;
+  }
+
   .dribble__content{
     display: flex;
     flex-direction: column;
     margin-bottom: 120px;
+
+    @include mobile{
+      margin-bottom: 64px;
+    }
 
     .dribble__title{
       margin-bottom: 24px;

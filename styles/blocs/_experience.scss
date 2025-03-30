@@ -5,6 +5,10 @@
     padding-block: 80px;
   }
 
+  @include mobile {
+    padding-block: 48px;
+  }
+
   .experience__subtitle{
     font-size: 16px;
     text-transform: uppercase;
@@ -17,10 +21,18 @@
     color: var(--white);
     margin-bottom: 40px;
     max-width: 689px;
+
+    @include mobile{
+      font-size: 32px;
+    }
   }
   .experience__companies{
     .experience__company{
       grid-column: span 4;
+
+      @include mobile{
+        grid-column: span 12;
+      }
 
       .experience__number{
         font-weight: 400;
@@ -31,8 +43,12 @@
       .experience__name{
         font-weight: 700;
         font-size: 24px;
-        margin-bottom: 22px;
+        margin-bottom: 24px;
         color: var(--white);
+
+        @include mobile{
+          margin-bottom: 16px;
+        }
 
         .google{
           color: var(--green-accent);
@@ -40,7 +56,7 @@
         .facebook{
           color: var(--blue-accent);
         }
-        .dribbble{
+        .dribble{
           color: var(--pink-accent);
         }
 

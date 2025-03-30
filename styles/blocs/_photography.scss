@@ -5,12 +5,28 @@
     padding-block: 80px;
   }
 
+  @include mobile{
+    padding-block: 48px;
+  }
+
   &__content{
     display: flex;
     flex-direction: column;
     row-gap: 24px;
     max-width: 588px;
     margin-bottom: 64px;
+
+    @include mobile{
+      margin-bottom: 40px;
+    }
+
+    .photography__title{
+      font-size: 55px;
+
+      @include mobile{
+        font-size: 32px;
+      }
+    }
 
     &__description{
       font-size: 18px;
@@ -26,6 +42,7 @@
       display: flex;
       column-gap: 24px;
       row-gap: 24px;
+      flex-wrap: wrap;
 
       .photography__button{
         background-color: transparent;
@@ -52,8 +69,12 @@
           object-fit: cover;
         }
 
-        @include tablet{
+        @include tablet {
           grid-column: span 6;
+        }
+
+        @include mobile {
+          grid-column: span 12;
         }
       }
     }

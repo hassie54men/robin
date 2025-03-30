@@ -36,6 +36,10 @@
         .projects__subtitle{
           font-size: 55px;
           line-height: normal;
+
+          @include mobile{
+            font-size: 32px;
+          }
         }
       }
 
